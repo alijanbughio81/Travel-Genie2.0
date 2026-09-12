@@ -22,7 +22,7 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
 html,body,[class*="css"]{font-family:'DM Sans',sans-serif}
-.stApp{background:#F5F8FC;color:#10233F}
+.stApp{background:#F5F8FC;color:#10233F}.stApp p,.stApp label,.stApp span,.stApp div{color:#10233F}.stApp input,.stApp textarea{background:white!important;color:#10233F!important}.stApp [data-baseweb="select"]>div{background:white!important;color:#10233F!important}
 .block-container{max-width:1380px;padding:1.6rem 2.2rem 3rem}
 section[data-testid="stSidebar"]{background:#0D1B32}
 section[data-testid="stSidebar"] *{color:#F4F7FB!important}
@@ -124,7 +124,7 @@ cols=st.columns(4)
 for col,(label,value) in zip(cols,summary):
     with col: st.markdown(f'<div class="metric-card"><div class="metric-label">{label}</div><div class="metric-value">{value}</div></div>',unsafe_allow_html=True)
 
-tabs=st.tabs(["🗓️ Itinerary","💰 Budget","✈️ Flights","🏨 Hotels","🎯 Experiences","🌤️ Weather"])
+tabs=st.tabs(["🗓️ Itinerary","💰 Budget","✈️ Flights","🏨 Hotels","🎯 Activities","🌤️ Weather"])
 
 with tabs[0]:
     st.markdown('<div class="section-title">Day-by-day plan</div>',unsafe_allow_html=True)
