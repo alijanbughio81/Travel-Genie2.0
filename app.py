@@ -23,40 +23,62 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
 html,body,[class*="css"]{font-family:'DM Sans',sans-serif}
 .stApp{background:#F5F8FC;color:#10233F}
-.stApp p,.stApp label{color:#10233F}
-.stApp input,.stApp textarea{background:white!important;color:#10233F!important;border-color:#B8C4D6!important}
-.stApp [data-baseweb="select"]>div{background:white!important;color:#10233F!important}
-.stApp [data-baseweb="select"] input{color:#10233F!important}
-.stApp .stButton button{color:white!important}
-.stApp [data-testid="stAlert"]{color:#10233F}
-.stApp [data-testid="stAlert"] p{color:inherit}
-.stApp [data-testid="stProgress"]{color:#246BFE}
 .block-container{max-width:1380px;padding:1.6rem 2.2rem 3rem}
+
+/* Dark surfaces: white text */
 section[data-testid="stSidebar"]{background:#0D1B32}
 section[data-testid="stSidebar"] *{color:#F4F7FB!important}
-section[data-testid="stSidebar"] .stTextInput input,
-section[data-testid="stSidebar"] .stNumberInput input,
-section[data-testid="stSidebar"] .stDateInput input{background:#162845!important;border:1px solid #2A3E5F!important;color:white!important;border-radius:10px!important}
-section[data-testid="stSidebar"] [data-baseweb="select"]>div{background:#162845!important;border-color:#2A3E5F!important;color:white!important} section[data-testid="stSidebar"] [data-baseweb="select"] *{color:white!important}
-section[data-testid="stSidebar"] .stButton button{background:#246BFE;border:0;color:white;border-radius:11px;font-weight:700}
-.hero{background:linear-gradient(110deg,#0D1B32,#153A78 60%,#246BFE);border-radius:26px;padding:2.5rem 2.7rem;color:white;margin-bottom:1.5rem;position:relative;overflow:hidden}
+.hero{background:linear-gradient(110deg,#0D1B32,#153A78 60%,#246BFE);border-radius:26px;padding:2.5rem 2.7rem;color:white!important;margin-bottom:1.5rem;position:relative;overflow:hidden}
+.hero *{color:white!important}
 .hero:after{content:"✈";position:absolute;right:5%;top:-35px;font-size:170px;opacity:.08;transform:rotate(-18deg)}
 .hero h1{font-family:'Plus Jakarta Sans';font-size:2.7rem;margin:0 0 .35rem;letter-spacing:-1px}
 .hero p{margin:0;opacity:.82;font-size:1.05rem}
 .eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.72rem;font-weight:800;opacity:.65;margin-bottom:.65rem}
-.section-title{font-family:'Plus Jakarta Sans';color:#10233F;font-size:1.35rem;font-weight:800;margin:1.2rem 0 .8rem}
-.metric-card,.card{background:white;border:1px solid #E5EAF1;border-radius:17px;padding:1.1rem 1.2rem;box-shadow:0 5px 18px rgba(24,49,87,.045)}
-.metric-label,.muted{color:#718096;font-size:.82rem}
-.metric-value{color:#10233F;font-size:1.3rem;font-weight:800;margin-top:.2rem}
+
+/* Light surfaces: dark text */
+.section-title{font-family:'Plus Jakarta Sans';color:#10233F!important;font-size:1.35rem;font-weight:800;margin:1.2rem 0 .8rem}
+.metric-card,.card{background:white;border:1px solid #E5EAF1;border-radius:17px;padding:1.1rem 1.2rem;box-shadow:0 5px 18px rgba(24,49,87,.045);color:#10233F}
+.metric-card *,.card *{color:#10233F}
+.metric-label,.muted{color:#52647D!important;font-size:.82rem}
+.metric-value{color:#10233F!important;font-size:1.3rem;font-weight:800;margin-top:.2rem}
 .card{margin-bottom:.8rem}
-.card-title{color:#10233F;font-weight:800;font-size:1.03rem}
-.price{color:#246BFE;font-size:1.2rem;font-weight:800}
-.badge{display:inline-block;background:#EAF2FF;color:#246BFE;border-radius:999px;padding:.28rem .62rem;font-size:.72rem;font-weight:700;margin-right:.3rem}
-.day-card{background:white;border:1px solid #E5EAF1;border-left:4px solid #246BFE;border-radius:18px;padding:1.35rem 1.45rem;margin-bottom:.9rem;box-shadow:0 6px 20px rgba(24,49,87,.045)}
-.day-number{color:#246BFE;font-size:.74rem;text-transform:uppercase;font-weight:800;letter-spacing:1.5px}
-.day-title{color:#10233F;font-family:'Plus Jakarta Sans';font-size:1.25rem;font-weight:800;margin:.25rem 0 .7rem}
-.route{background:#F0F5FF;border-radius:13px;padding:.75rem 1rem;text-align:center;color:#10233F;font-weight:700}
+.card-title{color:#10233F!important;font-weight:800;font-size:1.03rem}
+.price{color:#165DCC!important;font-size:1.2rem;font-weight:800}
+.badge{display:inline-block;background:#EAF2FF;color:#165DCC!important;border-radius:999px;padding:.28rem .62rem;font-size:.72rem;font-weight:700;margin-right:.3rem}
+.day-card{background:white;border:1px solid #E5EAF1;border-left:4px solid #246BFE;border-radius:18px;padding:1.35rem 1.45rem;margin-bottom:.9rem;box-shadow:0 6px 20px rgba(24,49,87,.045);color:#10233F}
+.day-card *{color:#10233F}
+.day-number{color:#165DCC!important;font-size:.74rem;text-transform:uppercase;font-weight:800;letter-spacing:1.5px}
+.day-title{color:#10233F!important;font-family:'Plus Jakarta Sans';font-size:1.25rem;font-weight:800;margin:.25rem 0 .7rem}
+.route{background:#F0F5FF;border-radius:13px;padding:.75rem 1rem;text-align:center;color:#10233F!important;font-weight:700}
 .weather{background:linear-gradient(135deg,#EAF2FF,#F7FAFF);border-color:#D9E6FF}
+
+/* Streamlit controls on light background */
+.stApp input,.stApp textarea{background:white!important;color:#10233F!important;border:1px solid #B8C4D6!important}
+.stApp input::placeholder,.stApp textarea::placeholder{color:#66758A!important}
+.stApp [data-baseweb="select"]>div{background:white!important;color:#10233F!important;border-color:#B8C4D6!important}
+.stApp [data-baseweb="select"] *{color:#10233F!important}
+.stApp [data-baseweb="select"] input{color:#10233F!important}
+.stApp [data-testid="stTabs"] button{color:#10233F!important;font-weight:700}
+.stApp [data-testid="stTabs"] button[aria-selected="true"]{color:#165DCC!important}
+
+/* Buttons: blue surface + white text */
+.stApp .stButton button{background:#246BFE!important;border:0!important;color:white!important;border-radius:11px;font-weight:700}
+.stApp .stButton button *{color:white!important}
+
+/* Sidebar controls: dark surface + white text */
+section[data-testid="stSidebar"] .stTextInput input,
+section[data-testid="stSidebar"] .stNumberInput input,
+section[data-testid="stSidebar"] .stDateInput input{background:#162845!important;border:1px solid #2A3E5F!important;color:white!important;border-radius:10px!important}
+section[data-testid="stSidebar"] [data-baseweb="select"]>div{background:#162845!important;border-color:#2A3E5F!important;color:white!important}
+section[data-testid="stSidebar"] [data-baseweb="select"] *{color:white!important}
+section[data-testid="stSidebar"] .stButton button{background:#246BFE!important;border:0!important;color:white!important;border-radius:11px;font-weight:700}
+
+/* Status messages: dark text on light backgrounds */
+.stApp [data-testid="stAlert"]{color:#123D2A!important}
+.stApp [data-testid="stAlert"] p,
+.stApp [data-testid="stAlert"] div,
+.stApp [data-testid="stAlert"] span{color:#123D2A!important}
+.stApp [data-testid="stAlert"] svg{color:#16834B!important}
 div[data-testid="stTabs"] button{font-weight:700}
 </style>
 """, unsafe_allow_html=True)
