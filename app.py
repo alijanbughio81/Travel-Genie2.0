@@ -22,14 +22,22 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
 html,body,[class*="css"]{font-family:'DM Sans',sans-serif}
-.stApp{background:#F5F8FC;color:#10233F}.stApp p,.stApp label,.stApp span,.stApp div{color:#10233F}.stApp input,.stApp textarea{background:white!important;color:#10233F!important}.stApp [data-baseweb="select"]>div{background:white!important;color:#10233F!important}
+.stApp{background:#F5F8FC;color:#10233F}
+.stApp p,.stApp label{color:#10233F}
+.stApp input,.stApp textarea{background:white!important;color:#10233F!important;border-color:#B8C4D6!important}
+.stApp [data-baseweb="select"]>div{background:white!important;color:#10233F!important}
+.stApp [data-baseweb="select"] input{color:#10233F!important}
+.stApp .stButton button{color:white!important}
+.stApp [data-testid="stAlert"]{color:#10233F}
+.stApp [data-testid="stAlert"] p{color:inherit}
+.stApp [data-testid="stProgress"]{color:#246BFE}
 .block-container{max-width:1380px;padding:1.6rem 2.2rem 3rem}
 section[data-testid="stSidebar"]{background:#0D1B32}
 section[data-testid="stSidebar"] *{color:#F4F7FB!important}
 section[data-testid="stSidebar"] .stTextInput input,
 section[data-testid="stSidebar"] .stNumberInput input,
 section[data-testid="stSidebar"] .stDateInput input{background:#162845!important;border:1px solid #2A3E5F!important;color:white!important;border-radius:10px!important}
-section[data-testid="stSidebar"] [data-baseweb="select"]>div{background:#162845!important;border-color:#2A3E5F!important}
+section[data-testid="stSidebar"] [data-baseweb="select"]>div{background:#162845!important;border-color:#2A3E5F!important;color:white!important} section[data-testid="stSidebar"] [data-baseweb="select"] *{color:white!important}
 section[data-testid="stSidebar"] .stButton button{background:#246BFE;border:0;color:white;border-radius:11px;font-weight:700}
 .hero{background:linear-gradient(110deg,#0D1B32,#153A78 60%,#246BFE);border-radius:26px;padding:2.5rem 2.7rem;color:white;margin-bottom:1.5rem;position:relative;overflow:hidden}
 .hero:after{content:"✈";position:absolute;right:5%;top:-35px;font-size:170px;opacity:.08;transform:rotate(-18deg)}
